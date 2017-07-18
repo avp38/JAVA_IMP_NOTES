@@ -16,3 +16,9 @@ start.compareTo(str)<=0 && start.compareTo(str)>=0 --> then str is in the range 
  Will also work For Timestamps ex: below
 String start="2017:01:01:00:00:00"; String end="2017:05:31:23:59:59"; String str="2017:03:01:23:59:59";
 */
+
+
+// NOTE: Regex split method splits on regular expressions, and . in a regular expression means "any character"
+// Therefore str.split(".") --> will not work
+// Use
+String[] parts = str.split("//.");
