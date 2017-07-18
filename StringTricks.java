@@ -22,3 +22,8 @@ String start="2017:01:01:00:00:00"; String end="2017:05:31:23:59:59"; String str
 // Therefore str.split(".") --> will not work
 // Use
 String[] parts = str.split("//.");
+/*NOTE: Problem with String[] parts = split(".");
+if(1.1.1.1) --> parts.length is 4
+if(1.1.1.1.) --> Still parts.length is 4 --> does not handle the last "."
+But if(.1.1.1.1) --> parts.length is 5 --> handles first "." 
+*/
