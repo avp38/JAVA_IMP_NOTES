@@ -27,3 +27,14 @@ if(1.1.1.1) --> parts.length is 4
 if(1.1.1.1.) --> Still parts.length is 4 --> does not handle the last "."
 But if(.1.1.1.1) --> parts.length is 5 --> handles first "." 
 */
+
+/* Understand meaning of regex statement used
+https://stackoverflow.com/questions/225337/how-do-i-split-a-string-with-any-whitespace-chars-as-delimiters
+http://www.rexegg.com/regex-quickstart.html
+One more IMP NOTE --> when using split --> for example:  String[] parts= s.split(" ")
+if the string s is " abc def" i.e. there is whitspace at beginning
+then first element of parts array will be " " (blank space)
+To avoid this --> trim the string
+So should be String[] parts= s.trim().split(" ") OR String[] parts= s.trim().split("\\s+")
+Also NOTE--> that if there is space in last element ("abc def ") it will ignore 
+*/
