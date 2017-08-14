@@ -7,4 +7,8 @@ for (char key : map.keySet()) {
   ...
 }
 
+// In order to automatically set default value when value does not exist in map --> USE
+map.getOrDefault(i, -1);
+// In the above case, it first tries to find key with value i; if not present it returns default value of -1
+
 
