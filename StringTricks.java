@@ -39,17 +39,14 @@ So should be String[] parts= s.trim().split(" ") OR String[] parts= s.trim().spl
 Also NOTE--> that if there is space in last element ("abc def ") it will ignore 
 */
 
-// To check if String is numeric
+// To check if String is numeric --> [NOTE: StringUtils method is not supported in LeetCode] *************
 String s = "123";
 StringUtils.isNumeric(s);
 // To check if Alphanumeric (only letters and digit) --> use
 StringUtils.isAlphanumeric(s);
 
-// Or using regex -- Integer only
-public boolean isNumeric(String s) {
-    return s.matches("\\d+");
-}
-// Using regex --> Both integer and floating point
+// Using regex --> Both integer and floating point 
+//NOTE:--> Only USE IF REQD --> MAKES PROGRAM SLOW *************
 public boolean isNumeric(String s) {
     return s.matches("[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)");
 }
