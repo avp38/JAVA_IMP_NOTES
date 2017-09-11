@@ -50,3 +50,8 @@ StringUtils.isAlphanumeric(s);
 public boolean isNumeric(String s) {
     return s.matches("[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)");
 }
+
+// To check if String a is lexicographicall smaller --> use compareTo method
+//ex: String s1 = "a"; String s2 = "b"
+a.compareTo(b) //--> This will give number less than 0 --> since "a" is lexicographically smaller than "b"
+ 
