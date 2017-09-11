@@ -55,3 +55,7 @@ public boolean isNumeric(String s) {
 //ex: String s1 = "a"; String s2 = "b"
 a.compareTo(b) //--> This will give number less than 0 --> since "a" is lexicographically smaller than "b"
  
+// Sort List of Strings based on lexicographical order and increasing length
+// List<String> d 
+Collections.sort(d, (a,b) -> a.length() != b.length() ? -Integer.compare(a.length(), b.length()) :  a.compareTo(b));
+ 
