@@ -21,3 +21,10 @@ PriorityQueue<Element> pq = new PriorityQueue<Element>(new Comparator<Element>()
 				return a.value - b.value;
 			}
 		});
+
+
+// Sort Priority Queue (Sort HashMap qty in descending order) and if same qty --> then string shd be in ascending order
+// Create Heap
+PriorityQueue<Map.Entry<String, Integer> pq = new PriorityQueue<>( 
+    (a,b) -> a.getValue()==b.getValue() ?  a.getKey().compareTo(b.getKey()) : b.getValue() - a.getValue(); 
+);
