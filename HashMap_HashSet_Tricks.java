@@ -12,3 +12,8 @@ map.getOrDefault(i, -1);
 // In the above case, it first tries to find key with value i; if not present it returns default value of -1
 
 
+// To subtract elements of Set A from Set B --> Use following
+Set<String> a = new HashSet<>();
+Set<String> b = new HashSet<>();
+b.removeAll(a);
+
