@@ -58,4 +58,7 @@ a.compareTo(b) //--> This will give number less than 0 --> since "a" is lexicogr
 // Sort List of Strings based on lexicographical order and increasing length
 // List<String> d 
 Collections.sort(d, (a,b) -> a.length() != b.length() ? -Integer.compare(a.length(), b.length()) :  a.compareTo(b));
+
+
+// NOTE that indexOf(String s, int index) method will search first occurence of s starting from index 
  
