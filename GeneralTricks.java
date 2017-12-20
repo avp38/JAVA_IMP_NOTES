@@ -14,3 +14,13 @@ Collections.reverse(a);
 // Main Idea:
 // Do not use addFirst or addLast --> since these methods are not defined for List<Integer>
 // But instead use --> add(0,val) & add(val) --> Both have O(1) complexity with LinkedLis
+
+
+// Return array of specific size by directly initializing it
+return new int[]{incr, decr};
+//OR
+return new int[]{1,0}; // NOTE Here a common mistake is to add the size ex: return new int[2]{1,0}; --> This is wrong
+
+// If you only want to return empty array --> Then it is
+return new int[2]; 
+// Whenever you are doing direct initialization --> never mention size of array
