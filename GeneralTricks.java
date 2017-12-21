@@ -24,3 +24,7 @@ return new int[]{1,0}; // NOTE Here a common mistake is to add the size ex: retu
 // If you only want to return empty array --> Then it is
 return new int[2]; 
 // Whenever you are doing direct initialization --> never mention size of array
+
+
+//NOTE: for iterator if using next() --> always use typecasting --> V-IMP --> since it returns object
+int val = (int)it.next(); // Example
