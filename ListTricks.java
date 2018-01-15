@@ -25,3 +25,6 @@ int[] toIntArray(List<Integer> list){
     ret[i] = list.get(i);
   return ret;
 }
+
+// Return List<Integer> in initialized form --> Similar to --> return new int[]{-1,-1} 
+return Arrays.asList(-1,-1); // NOTE: Here it is () instead of {}
