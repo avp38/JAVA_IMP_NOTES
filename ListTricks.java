@@ -17,8 +17,11 @@ for (int[] p : people) {
 // It is (new int[list.size()][]);
 return list.toArray(new int[list.size()][]);
 
-// If you want to convert a List<Integer> to int[] --> you have to do it 2 step
-// There is no other better way
-List<Integer> list = new ArrayList<>(); // Or LinkedList<>();
-Integer[] tempArray = new Integer[list.size()];
-list.toArray(tempArray);
+// If you want to convert a List<Integer> to int[] --> you have to do it manually
+// There is no other better way OR better write your own method 
+int[] toIntArray(List<Integer> list){
+  int[] ret = new int[list.size()];
+  for(int i = 0;i < ret.length;i++)
+    ret[i] = list.get(i);
+  return ret;
+}
