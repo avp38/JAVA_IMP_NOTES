@@ -16,3 +16,9 @@ for (int[] p : people) {
 // so we use toArray() function --> Take a close look at syntax
 // It is (new int[list.size()][]);
 return list.toArray(new int[list.size()][]);
+
+// If you want to convert a List<Integer> to int[] --> you have to do it 2 step
+// There is no other better way
+List<Integer> list = new ArrayList<>(); // Or LinkedList<>();
+Integer[] tempArray = new Integer[list.size()];
+list.toArray(tempArray);
