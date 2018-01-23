@@ -28,3 +28,7 @@ PriorityQueue<Element> pq = new PriorityQueue<Element>(new Comparator<Element>()
 PriorityQueue<Map.Entry<String, Integer> pq = new PriorityQueue<>( 
     (a,b) -> a.getValue()==b.getValue() ?  a.getKey().compareTo(b.getKey()) : b.getValue() - a.getValue(); 
 );
+
+// NOTE: This definition will not word with double array since the compare method expects a integer --> But will work for 
+// integer array
+PriorityQueue<int[]> pq = new PriorityQueue<>((a,b)->a[0]-b[0]); //--> const
