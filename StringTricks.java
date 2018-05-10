@@ -12,7 +12,7 @@ int ascii = (int) c;
 /* If there are two range strings and if you have to check if between that range
 Then use compareTo
 String start="2000"; String end="2008"; String str="2004";
-start.compareTo(end)<=0 && start.compareTo(end)>=0 --> then str is in the range between start and end
+start.compareTo(str)<=0 && str.compareTo(end)>=0 --> then str is in the range between start and end
  Will also work For Timestamps ex: below
 String start="2017:01:01:00:00:00"; String end="2017:05:31:23:59:59"; String str="2017:03:01:23:59:59";
 */
