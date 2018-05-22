@@ -67,3 +67,7 @@ Collections.sort(d, (a,b) -> a.length() != b.length() ? -Integer.compare(a.lengt
 
 // NOTE that indexOf(String s, int index) method will search first occurence of s starting from index 
  
+// new String() Constructor
+// To make String from part of array --> Use this
+// str[] is character array
+String s = new String(str, start, length);
