@@ -28,3 +28,7 @@ return new int[2];
 
 //NOTE: for iterator if using next() --> always use typecasting --> V-IMP --> since it returns object
 int val = (int)it.next(); // Example
+
+// NOTE: -- V-IMP
+char c = '1';
+Integer.valueOf(c);// --> will give 49(Ascii value) and not 1 --> But works for Strings 
