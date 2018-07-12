@@ -32,3 +32,10 @@ PriorityQueue<Map.Entry<String, Integer> pq = new PriorityQueue<>(
 // NOTE: This definition will not word with double array since the compare method expects a integer --> But will work for 
 // integer array
 PriorityQueue<int[]> pq = new PriorityQueue<>((a,b)->a[0]-b[0]); //--> const
+
+
+// V-IMP Method if you need min heap of fraction --> suppose you have nums[i] and you want heap of all fractions
+// Then just use this lambda function (a,b)->a[0]*b[1] - a[1]*b[0]
+PriorityQueue<int[]> pq = new PriorityQueue<>((a,b)->a[0]*b[1]-a[1]*b[0]);
+// Also note you can add an a and b can be indexes of an array in the lambda function
+PriorityQueue<int[]> pq = new PriorityQueue<int[]>((a, b) -> A[a[0]] * A[b[1]] - A[a[1]] * A[b[0]]);
