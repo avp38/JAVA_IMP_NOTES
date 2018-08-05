@@ -32,3 +32,7 @@ int val = (int)it.next(); // Example
 // NOTE: -- V-IMP
 char c = '1';
 Integer.valueOf(c);// --> will give 49(Ascii value) and not 1 --> But works for Strings 
+
+// NOTE : if youy want to add shortcut expression ina addition statement it has to be in brackets otherwise will give wrong ans
+dp[i][j] = 2+ (len>2 ? dp[i+1][j-1] : 0); // It has to be written this way
+// dp[i][j] = 2+ len>2 ? dp[i+1][j-1] : 0;// If you write without brackets --> it will give wrong ans
