@@ -36,3 +36,9 @@ Integer.valueOf(c);// --> will give 49(Ascii value) and not 1 --> But works for 
 // NOTE : if youy want to add shortcut expression ina addition statement it has to be in brackets otherwise will give wrong ans
 dp[i][j] = 2+ (len>2 ? dp[i+1][j-1] : 0); // It has to be written this way
 // dp[i][j] = 2+ len>2 ? dp[i+1][j-1] : 0;// If you write without brackets --> it will give wrong ans
+
+// If some sum needs modulus to constraint the final ans (especially in dp solution) --> define modulas object using long
+static final long MOD = 1000000007; // This will br before the function defn 
+// ...
+// ...
+dp[i][j] = (int) ((dp[i][j]+MOD)% MOD); // will be in the main code
