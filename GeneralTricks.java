@@ -39,6 +39,4 @@ dp[i][j] = 2+ (len>2 ? dp[i+1][j-1] : 0); // It has to be written this way
 
 // If some sum needs modulus to constraint the final ans (especially in dp solution) --> define modulas object using long
 static final long MOD = 1000000007; // This will br before the function defn 
-// ...
-// ...
 dp[i][j] = (int) ((dp[i][j]+MOD)% MOD); // will be in the main code
